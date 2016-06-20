@@ -1,0 +1,36 @@
+
+	<div class="body-box">
+		<div class="image-container">
+			<img ng-src="images/{{contentInfo.image}}" alt="">
+		</div>
+		<div class="title white-hover text-hover">
+			{{contentInfo.title}}
+		</div>
+		<div class="subtitle white-hover text-hover">
+			{{contentInfo.subtitle1}} <br>
+			{{contentInfo.subtitle2}}
+		</div>
+		<div class="divider"></div>
+		<div class="overview text-hover">
+			{{contentInfo.overview}}
+		</div>
+		<a class="read-more white-hover text-hover" ng-click="bodyBoxCtrl.modal_off = !bodyBoxCtrl.modal_off">
+			Read More
+		</a>
+		<div class="dialog" ng-hide="bodyBoxCtrl.modal_off">
+			<div class="backdrop" ng-click="bodyBoxCtrl.modal_off = !bodyBoxCtrl.modal_off"></div>
+			<div class="white-container transition">
+				<div class="dialog-contents transition">
+					<h2>{{contentInfo.title}}</h2>
+					<p>Maecenas quam est, tempor vel vestibulum vitae, viverra ac risus. Fusce finibus tempus porta. Vivamus quam felis, posuere a congue sit amet, ornare eu libero. Vivamus sollicitudin sem id ante pharetra, quis feugiat nibh maximus. Proin porta ultrices maximus. Sed pulvinar tempus ullamcorper. Fusce iaculis a arcu vel pellentesque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec blandit pharetra dolor. Suspendisse condimentum, dolor ac semper euismod, nisl ligula rutrum nibh, eu volutpat orci purus at odio. Donec tempor turpis lobortis nulla dictum, at tempus est sollicitudin.</p>
+				</div>
+				<div class="close">
+					<button
+						class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effec"
+						ng-click="bodyBoxCtrl.modal_off = !bodyBoxCtrl.modal_off">
+					  Done
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
