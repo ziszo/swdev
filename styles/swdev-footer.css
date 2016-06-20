@@ -125,4 +125,8 @@
 					margin: 0;
 					fill-color: grey;
 				}
+
+				.rt-container .blue-box .text-container {
+					font-size: 24px;
+				}
 			}

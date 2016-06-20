@@ -17,6 +17,10 @@
 	            }
 	        }
 
+	        .ng-cloak {
+	        	display: none;
+	        }
+
             .transition {
 				-webkit-transition: all 0.4s ease;
 				-o-transition: all 0.4s ease;
